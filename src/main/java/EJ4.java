@@ -48,4 +48,8 @@ public class EJ4 {
         int cargaOptima = planificador.calcularCargaTrabajoOptima();
         System.out.println("Carga de trabajo óptima: " + cargaOptima);
     }
+    public int obtenerTarea(String miembro) {
+        return tareasDiarias.get(miembro);
+    }
+
 }
