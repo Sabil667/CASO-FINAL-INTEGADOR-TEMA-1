@@ -1,4 +1,15 @@
+
 public class EJ5 {
+
+    public static int[][] representarTerreno(int[][] terreno) {
+        // Aquí puedes implementar la lógica para representar el terreno
+        return terreno;
+    }
+
+    public static int[][] planificarConstrucciones(int[][] construcciones) {
+        // Aquí puedes implementar la lógica para planificar las construcciones
+        return construcciones;
+    }
 
     public static int[][] multiplicarMatrices(int[][] a, int[][] b) {
         int m = a.length, n = a[0].length, p = b[0].length;
@@ -20,17 +31,21 @@ public class EJ5 {
 
     public static void main(String[] args) {
         int[][] terreno = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        int[][] construccion = {{2, 0, 1}, {1, 2, 3}, {0, 1, 2}};
+        int[][] construcciones = {{2, 0, 1}, {1, 2, 3}, {0, 1, 2}};
 
-        int[][] resultado = multiplicarMatrices(terreno, construccion);
+        int[][] terrenoRepresentado = representarTerreno(terreno);
+        int[][] construccionesPlanificadas = planificarConstrucciones(construcciones);
+        int[][] resultado = multiplicarMatrices(terrenoRepresentado, construccionesPlanificadas);
 
-        System.out.println("Matriz de Terreno:");
-        visualizarMatriz(terreno);
+        System.out.println("Terreno Representado:");
+        visualizarMatriz(terrenoRepresentado);
 
-        System.out.println("\nMatriz de Construcción:");
-        visualizarMatriz(construccion);
+        System.out.println("\nConstrucciones Planificadas:");
+        visualizarMatriz(construccionesPlanificadas);
 
         System.out.println("\nResultado de la Multiplicación (Planificación de Construcciones):");
         visualizarMatriz(resultado);
     }
 }
+
+
