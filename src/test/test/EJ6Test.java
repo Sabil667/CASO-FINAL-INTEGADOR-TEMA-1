@@ -5,7 +5,7 @@ public class EJ6Test {
 
     @Test
     public void testContarVocales() {
-        assertEquals(10, EJ6.contarVocales("Hello World"));
+        assertEquals(3, EJ6.contarVocales("Hello World"));
     }
 
     @Test
